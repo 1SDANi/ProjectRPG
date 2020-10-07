@@ -1,8 +1,15 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Styles/CommandBox.tres" type="StyleBox" id=1]
+[ext_resource path="res://Styles/EventBox.tres" type="StyleBox" id=2]
 
 [node name="UI" type="VBoxContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 16.0
+margin_top = 16.0
+margin_right = -16.0
+margin_bottom = -16.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -10,76 +17,117 @@ __meta__ = {
 }
 
 [node name="ActionBox" type="VBoxContainer" parent="."]
-margin_right = 1024.0
-margin_bottom = 298.0
+margin_right = 992.0
+margin_bottom = 282.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="EnemyBox" type="RichTextLabel" parent="ActionBox"]
-margin_right = 1024.0
-margin_bottom = 71.0
+[node name="EnemyBox" type="Label" parent="ActionBox"]
+margin_right = 992.0
+margin_bottom = 67.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_styles/normal = ExtResource( 2 )
+text = "EnemyBox"
+align = 1
+valign = 1
 
-[node name="EnemyEvents" type="RichTextLabel" parent="ActionBox"]
-margin_top = 75.0
-margin_right = 1024.0
-margin_bottom = 147.0
+[node name="EnemyEvents" type="Label" parent="ActionBox"]
+margin_top = 71.0
+margin_right = 992.0
+margin_bottom = 139.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_styles/normal = ExtResource( 2 )
+text = "EnemyEvents"
+align = 1
+valign = 1
 
-[node name="AllyEvents" type="RichTextLabel" parent="ActionBox"]
-margin_top = 151.0
-margin_right = 1024.0
-margin_bottom = 222.0
+[node name="AllyEvents" type="Label" parent="ActionBox"]
+margin_top = 143.0
+margin_right = 992.0
+margin_bottom = 210.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_styles/normal = ExtResource( 2 )
+text = "AllyEvents"
+align = 1
+valign = 1
 
-[node name="AllyBox" type="RichTextLabel" parent="ActionBox"]
-margin_top = 226.0
-margin_right = 1024.0
-margin_bottom = 298.0
+[node name="AllyBox" type="Label" parent="ActionBox"]
+margin_top = 214.0
+margin_right = 992.0
+margin_bottom = 282.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_styles/normal = ExtResource( 2 )
+text = "AllyBox"
+align = 1
+valign = 1
 
 [node name="CommandBox" type="VBoxContainer" parent="."]
-margin_top = 302.0
-margin_right = 1024.0
-margin_bottom = 600.0
+margin_top = 286.0
+margin_right = 992.0
+margin_bottom = 568.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="UpperCommands" type="HBoxContainer" parent="CommandBox"]
-margin_right = 1024.0
-margin_bottom = 147.0
+margin_right = 992.0
+margin_bottom = 139.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+alignment = 1
 
-[node name="LeftCommand" type="RichTextLabel" parent="CommandBox/UpperCommands"]
-margin_right = 510.0
-margin_bottom = 147.0
+[node name="LeftCommand" type="Label" parent="CommandBox/UpperCommands"]
+margin_right = 494.0
+margin_bottom = 139.0
 size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 1 )
+text = "UpperLeft"
+align = 1
+valign = 1
 
-[node name="RightCommand" type="RichTextLabel" parent="CommandBox/UpperCommands"]
-margin_left = 514.0
-margin_right = 1024.0
-margin_bottom = 147.0
+[node name="RightCommand" type="Label" parent="CommandBox/UpperCommands"]
+margin_left = 498.0
+margin_right = 992.0
+margin_bottom = 139.0
 size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 1 )
+text = "UpperRight"
+align = 1
+valign = 1
 
 [node name="LowerCommands" type="HBoxContainer" parent="CommandBox"]
-margin_top = 151.0
-margin_right = 1024.0
-margin_bottom = 298.0
+margin_top = 143.0
+margin_right = 992.0
+margin_bottom = 282.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+alignment = 1
 
-[node name="LeftCommand" type="RichTextLabel" parent="CommandBox/LowerCommands"]
-margin_right = 510.0
-margin_bottom = 147.0
+[node name="LeftCommand" type="Label" parent="CommandBox/LowerCommands"]
+margin_right = 494.0
+margin_bottom = 139.0
 size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 1 )
+text = "BottomLeft"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="RightCommand" type="RichTextLabel" parent="CommandBox/LowerCommands"]
-margin_left = 514.0
-margin_right = 1024.0
-margin_bottom = 147.0
+[node name="RightCommand" type="Label" parent="CommandBox/LowerCommands"]
+margin_left = 498.0
+margin_right = 992.0
+margin_bottom = 139.0
 size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 1 )
+text = "BottomRight"
+align = 1
+valign = 1
